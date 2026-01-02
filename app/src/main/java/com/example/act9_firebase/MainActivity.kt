@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.act9_firebase.ui.theme.Act9_firebaseTheme
+import com.example.act9_firebase.view.controlNavigasi.DataSiswaApp
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Act9_firebaseTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
+                    DataSiswaApp(
                         name = "Android",
                         modifier = Modifier.padding(innerPadding)
                     )
